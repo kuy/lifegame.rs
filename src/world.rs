@@ -97,7 +97,7 @@ impl Renderer for World {
         for row in self.data.iter() {
             for cell in row.iter() {
                 let c = render_life(&cell);
-                printw(c);
+                printw(&c);
             }
             printw("\n");
         }
